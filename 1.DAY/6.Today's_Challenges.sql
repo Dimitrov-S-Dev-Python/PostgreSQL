@@ -21,5 +21,5 @@ FROM film
 -- How many distinct names of the customers are there?
 
 SELECT
-COUNT (*)
+COUNT (DISTINCT last_name)
 FROM customer

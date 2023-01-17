@@ -1,5 +1,6 @@
 -- Task 1
 -- Select customers from payment and order them by highest amount
+
 SELECT
 *
 FROM payment

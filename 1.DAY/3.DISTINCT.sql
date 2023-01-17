@@ -17,7 +17,7 @@ FROM actor
 ORDER BY first_name
 
 -- Task 3
--- Select distinct ratings from film
+-- Select distinct ratings from films
 
 SELECT
 DISTINCT

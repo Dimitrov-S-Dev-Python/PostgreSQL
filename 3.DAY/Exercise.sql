@@ -11,7 +11,7 @@ SELECT
 	FROM film
 
 --Task 2 Grouping GROUP BY
---Which of 2 employees (staff_id) is responcible for more payments.
+--Which of 2 employees (staff_id) is responsible for more payments.
 --How does the amount change if u dont consider amounts = to 0
 
 SELECT

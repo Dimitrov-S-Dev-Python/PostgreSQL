@@ -12,3 +12,15 @@ SELECT
 
 --Task 2
 --LEFT, RIGHT
+--Extract last 5 chars of the email address
+--The email address always ends with .org
+--Extract just the dir '.' from the email
+
+SELECT
+	RIGHT(email,5)
+	FROM customer
+
+
+SELECT
+	LEFT(RIGHT(email, 4),1)
+	FROM customer

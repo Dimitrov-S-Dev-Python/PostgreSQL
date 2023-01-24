@@ -24,3 +24,20 @@ SELECT
 SELECT
 	LEFT(RIGHT(email, 4),1)
 	FROM customer
+
+--Task 3 Concatenate
+--Create an anonymous vers of the email address
+--like Name@text.org => N***@text.org
+
+
+SELECT
+	LEFT(email, 1) || '***'|| RIGHT(email,19)
+	FROM customer
+
+--Task 4 Position
+--Extract first name from the email address and concatenate it with the last name.
+--Should be in form:Last name, First name
+
+SELECT
+	last_name || ', ' || LEFT(email,POSITION('.' IN email) - 1)
+	FROM customer

@@ -14,7 +14,7 @@ ORDER BY percentage DESC
 -- Find out how many tickets have been sold in the
 --following categories:
 -- low < 20.000
--- Mid betweem 20.000 - 150.000
+-- Mid between 20.000 - 150.000
 -- High >= 150.000
 
 SELECT

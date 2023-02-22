@@ -1,0 +1,21 @@
+--JOINS
+--Task 1 INNER JOIN
+-- Find out sold tickets by category Business,Economy,Comfort
+SELECT
+fare_conditions,
+COUNT(*)
+FROM seats AS s
+JOIN boarding_passes AS bp ON s.seat_no =bp.seat_no
+GROUP BY fare_conditions
+
+--Task 2 FULL OUTER JOIN
+-- Find out tickets that don't have boarding pass related to it.
+
+SELECT
+*
+FROM boarding_passes AS b
+FULL OUTER JOIN tickets AS t ON t.ticket_no = b.ticket_no
+WHERE b.ticket_no IS NULL
+
+
+

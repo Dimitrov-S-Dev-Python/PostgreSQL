@@ -11,3 +11,19 @@ WHERE ROUND(rental_rate / replacement_cost * 100,2) < 4
 ORDER BY percentage DESC
 
 --Task 2 CASE WHEN
+-- Find out how many tickets have been sold in the
+--following categories:
+-- low < 20.000
+-- Mid betweem 20.000 - 150.000
+-- High >= 150.000
+
+SELECT
+COUNT(*),
+CASE
+WHEN total_amount < 20.000 THEN 'Low'
+WHEN total_amount < 150.000 THEN 'Mid'
+ELSE 'High'
+END AS FlightTotal
+FROM bookings
+GROUP BY total_amount
+
